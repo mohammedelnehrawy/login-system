@@ -1,0 +1,107 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up & Login</title>
+ 
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+LogIn Page -->
+<!-- <div class="container m-5 ">
+  <div class="LogIn w-75 text-center p-5 m-auto">
+    <h1 class="text-info">Smart Login System</h1>
+    <input id="signinEmail" class="form-control bg-transparent my-3" type="text" placeholder="Enter your e-mail">
+    <input id="signinpassword" class="form-control bg-transparent my-3" type="text" placeholder="Enter your password">
+    <button onclick="Login()" class="btn btn-outline-info my-3 w-100">Login</button>
+    <p class="my-3 text-white">Don’t have an account? <a href="" class="text-white">SignUp</a></p>
+  </div>
+</div>
+
+ <!-- SignUp Page -->
+<!-- <div class="container m-5 ">
+  <div class="LogIn w-75 text-center p-5 m-auto">
+    <h1 class="text-info">Smart Login System</h1>
+    <input id="signUpName" class="form-control bg-transparent my-3" type="text" placeholder="Enter your name">
+    <input id="signUpEmail" class="form-control bg-transparent my-3" type="text" placeholder="Enter your e-mail">
+    <input id="signUpPassword" class="form-control bg-transparent my-3" type="text" placeholder="Enter password">
+    <button onclick="Login()" class="btn btn-outline-info my-3 w-100">SignIn</button>
+    <p class="my-3 text-white">Don’t have an account? <a href="" class="text-white">SignIn</a></p>
+  </div>
+</div> -->
+
+<!-- LogOut Page -->
+<!-- <div class="container m-5 ">
+  <div class="NavBar d-flex justify-content-between">
+    <a href="" class="text-white text-decoration-none">SMART LOGIN</a>
+    <button class="btn btn-outline-warning">Log Out</button>
+  </div>
+  <div class="LogIn w-75 text-center p-5 m-auto">
+    <h1 class="text-info">Welcome ${signUpName.value}</h1>
+  </div>
+</div>
+
+<script src="main.js"></script> 
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login System</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- SignUp Page -->
+    <div id="signUpPage" class="container w-50 m-auto text-center">
+      <h2 class="text-info">Sign Up</h2>
+      <form class="p-4 ">
+        <input class="form-control text-white bg-transparent my-3" type="text" id="signUpName" placeholder="Enter your name" />
+        <input class="form-control text-white bg-transparent my-3" type="email" id="signUpEmail" placeholder="Enter your email" />
+        <input class="form-control text-white bg-transparent my-3"
+          type="password"
+          id="signUpPassword"
+          placeholder="Enter password"
+        />
+          <button onclick="signUp()" class="btn btn-outline-info w-100 my-3">Login</button>
+      </form>
+      <p id="signUpMessage"></p>
+      <p class="text-white">
+        Already have an account? <a href="#" onclick="showLoginPage()">Login</a>
+      </p>
+    </div>
+
+    <!-- Login Page -->
+    <div id="loginPage" style="display: none"  class="container w-50 py-4 m-auto text-center">
+      <h2 class="text-info my-3">Login</h2>
+      <input class="form-control text-white bg-transparent my3 " type="email" id="signinEmail" placeholder="Enter your email" />
+      <input class="form-control text-white bg-transparent my3 " type="password" id="signinPassword" placeholder="Enter password" />
+    
+      <button onclick="login()" class="btn btn-outline-info w-100 my-3">Login</button>
+
+      <p id="loginMessage"></p>
+      <p class="text-white">
+        Don't have an account?
+        <a href="#" onclick="showSignUpPage()">Sign Up</a>
+      </p>
+    </div>
+
+    <!-- Welcome Page -->
+    <div id="welcomePage" class="w-50 m-auto py-5" style="display: none">
+      <h2 class="text-white">Welcome, <span id="userName"></span>!</h2>
+      <button onclick="logout()">Log Out</button>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
